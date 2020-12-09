@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "FrontSmurtSub"
+  "defaultProject": "FrontSmurtSub",
+  "cli": {
+    "analytics": "ffdfdef3-82d7-40bb-bbcb-5dceec6b9ff4"
+  }
 }
