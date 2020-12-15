@@ -33,9 +33,9 @@ export class RegistrationComponent implements OnInit {
   }
 
 
-  navigate(): void {
-    this.router.navigate(['/reset-password']);
-  }
+  // navigate(): void {
+  //   this.router.navigate(['/reset-password']);
+  // }
 
   postDataForRegistration(): void {
     this.registrationService.getUsers().subscribe(value => console.log(value));

@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="login-dark">
+  <form [formGroup]="loginForm" (submit)="postDataForRegistration()">
+
+    <div
+      [ngClass]="(loginForm.controls.username.invalid) ? 'error' : 'form-group' ">
+      <label for="username"> UserName </label>
+      <br/>
+      <input id="username" class="form-control" type="text" formControlName="username"
+             placeholder="UserName">
+    </div>
+
+    <br/>
+
+    <div
+      [ngClass]="(loginForm.controls.password.invalid) ? 'error' : 'form-group' ">
+      <label for="password"> Password </label>
+      <br/>
+      <input id="password" class="form-control" type="password" formControlName="password" placeholder="Password">
+    </div>
+
+    <br/>
+    <div class="form-group">
+      <button [disabled]="loginForm.invalid " class="btn btn-primary btn-block" type="submit">Sign Up</button>
+    </div>
+    <br/>
+        <a (click)="navigate()" class="forgot cursor">Forgot your email or password?</a>
+
+  </form>
+</div>
