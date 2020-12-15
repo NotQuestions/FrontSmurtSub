@@ -13,6 +13,7 @@ export class RegistrationService {
 
 
   getUsers(): Observable<UserModel[]> {
+    console.log('Good!');
     return this.http.get<UserModel[]>('https://jsonplaceholder.typicode.com/users');
   }
 }

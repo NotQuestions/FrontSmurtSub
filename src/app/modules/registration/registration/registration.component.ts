@@ -4,7 +4,6 @@ import {RegistrationService} from '../services/registration.service';
 import {Router} from '@angular/router';
 // import custom validator to validate that password and confirm password fields match
 import {MustMatch} from '../validators/must-match.validator';
-import {log} from 'util';
 
 @Component({
   selector: 'app-registration',
@@ -25,7 +24,9 @@ export class RegistrationComponent implements OnInit {
         email: ['', [Validators.email, Validators.required]],
         password: ['', [Validators.minLength(8), Validators.required, Validators.maxLength(32)]],
         rPassword: ['', [Validators.minLength(8), Validators.required, Validators.maxLength(32)]],
-      }, {
+      }
+      ,
+      {
         validator: MustMatch('password', 'rPassword')
       }
     );
@@ -37,7 +38,7 @@ export class RegistrationComponent implements OnInit {
   }
 
   postDataForRegistration(): void {
-    this.registrationService.getUsers().subscribe(value => console.log(value) );
+    this.registrationService.getUsers().subscribe(value => console.log(value));
 
   }
 }

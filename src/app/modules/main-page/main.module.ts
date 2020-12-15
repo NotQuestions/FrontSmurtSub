@@ -2,15 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MainRoutingModule } from './main-routing.module';
-import { ComponentsComponent } from './components/components.component';
 import { MainComponent } from './main/main.component';
 
 
 @NgModule({
-  declarations: [ComponentsComponent, MainComponent],
+  declarations: [ MainComponent],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
   ]
 })
 export class MainModule { }
