@@ -8,7 +8,7 @@ body {
 }
 
 .ui-form {
-  box-shadow: 0 40pt 50pt 0 rgba(0,0,0,.35);
+  box-shadow: 0 40pt 50pt 0 rgba(0, 0, 0, .35);
   max-width: 350px;
   padding: 80px 30px 30px;
   margin: 50px auto 30px;
@@ -106,3 +106,24 @@ body {
   padding-top: 10px;
 }
 
+.error input{
+  border-bottom: 2px solid #cd7070;
+}
+
+.errorB button{
+  background: #9d959d;
+}
+.error::after{
+  content: "*No valid";
+  color: red;
+  font-size: 9px;
+}
+button{
+  width: 100%;
+  padding: 0;
+  line-height: 42px;
+  background: #70cdc3;
+  border-width: 0;
+  color: white;
+  font-size: 20px;
+}

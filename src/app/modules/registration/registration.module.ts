@@ -15,7 +15,8 @@ import {ReactiveFormsModule} from '@angular/forms';
   imports: [
     CommonModule,
     RegistrationRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
   providers: [RegistrationService]
 })
