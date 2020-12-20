@@ -1,0 +1,34 @@
+
+<div id="register">
+  <div>
+    <form  class="ui-form" [formGroup]="registrationForm" (submit)="postDataForRegistration()">
+      <h3 color="#54c3b7">Join to SmartSub</h3>
+
+      <div class="form-row" [ngClass]="(registrationForm.controls.username.invalid) ? 'error' : 'form-group' ">
+        <input type="text" id="username" formControlName="username"><label color="#ffffff" for="username">Username</label>
+      </div>
+
+      <div class="form-row" [ngClass]="(registrationForm.controls.email.invalid) ? 'error' : 'form-group' ">
+        <input type="text" id="email" class="form-control" formControlName="email"><label
+        for="email">Email</label>
+      </div>
+
+      <div class="form-row" [ngClass]="(registrationForm.controls.password.invalid) ? 'error' : 'form-group' ">
+        <input type="text" id="password" class="form-control"
+               formControlName="password"><label for="password">Password</label>
+      </div>
+
+      <div class="form-row"
+           [ngClass]="registrationForm.controls.password.touched
+           && (registrationForm.controls.password.value != registrationForm.controls.repeatPassword.value
+              || registrationForm.controls.password.invalid || registrationForm.controls.repeatPassword.invalid) ? 'error' : 'form-group' "
+      >
+        <input type="text" id="repeatPassword" required autocomplete="off" formControlName="repeatPassword"><label for="repeatPassword">Repeat
+        Password</label>
+      </div>
+      <p>
+        <input [disabled]="registrationForm.invalid" type="submit" value="Join"/>
+      </p>
+    </form>
+  </div>
+</div>

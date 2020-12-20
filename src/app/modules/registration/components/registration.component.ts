@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {RegistrationService} from '../services/registration.service';
 import {Router} from '@angular/router';
 // import custom validator to validate that password and confirm password fields match
@@ -23,22 +23,25 @@ export class RegistrationComponent implements OnInit {
         username: ['', [Validators.minLength(4), Validators.maxLength(32), Validators.required]],
         email: ['', [Validators.email, Validators.required]],
         password: ['', [Validators.minLength(8), Validators.required, Validators.maxLength(32)]],
-        rPassword: ['', [Validators.minLength(8), Validators.required, Validators.maxLength(32)]],
+        repeatPassword: ['', [Validators.minLength(8), Validators.required, Validators.maxLength(32)]],
       }
       ,
       {
-        validator: MustMatch('password', 'rPassword')
+        validator: MustMatch('password', 'repeatPassword')
       }
     );
   }
 
-
-  // navigate(): void {
-  //   this.router.navigate(['/reset-password']);
-  // }
-
   postDataForRegistration(): void {
-    this.registrationService.getUsers().subscribe(value => console.log(value));
+    console.log(this.registrationForm);
+    const user = {
+      email: this.registrationForm.value.email,
+      password: this.registrationForm.value.password,
+    };
+    this.registrationService.postRequestForRegistration(user).subscribe(value => {
+      this.registrationForm.reset();
+      this.router.navigate(['']);
+    });
 
   }
 }

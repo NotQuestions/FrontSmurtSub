@@ -1,7 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {UserModel} from '../models/User.model';
+import { UserRegistrationModel} from '../models/UserRegistration.model';
 import {Observable} from 'rxjs';
+import {environment} from '../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +13,8 @@ export class RegistrationService {
   }
 
 
-  getUsers(): Observable<UserModel[]> {
-    console.log('Good!');
-    return this.http.get<UserModel[]>('https://jsonplaceholder.typicode.com/users');
+  postRequestForRegistration(user: UserRegistrationModel): Observable<UserRegistrationModel> {
+       return this.http
+      .post<UserRegistrationModel>(`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${environment.apiKey}`, user);
   }
 }
