@@ -1,0 +1,18 @@
+.main{
+display: flex;
+  justify-content: flex-end;
+  /*background: #cd7070;*/
+}
+.main .main-auth{
+  margin: 20px;
+  font-size: 20px;
+  font-style: oblique;
+  color: white;
+  /*background: black;*/
+  /*align-items: flex-end;*/
+
+
+}
+h1 {
+  color: #54c3b7;
+}

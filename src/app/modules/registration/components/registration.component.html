@@ -1,7 +1,7 @@
 <div id="register">
   <div>
     <form class="ui-form" [formGroup]="registrationForm" (submit)="postDataForRegistration()">
-      <h3 color="#54c3b7">Join to SmartSub</h3>
+      <h1>Join to SmartSub</h1>
 
       <div class="form-row"
            [ngClass]="registrationForm.controls.username.touched && (registrationForm.controls.username.invalid) ? 'error' : 'form-group' ">
