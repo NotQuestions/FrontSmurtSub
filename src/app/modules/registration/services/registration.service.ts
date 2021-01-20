@@ -15,6 +15,6 @@ export class RegistrationService {
 
   postRequestForRegistration(user: UserRegistrationModel): Observable<UserRegistrationModel> {
        return this.http
-      .post<UserRegistrationModel>(`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${environment.apiKey}`, user);
+      .post<UserRegistrationModel>(`http://localhost:8080/register`, user);
   }
 }

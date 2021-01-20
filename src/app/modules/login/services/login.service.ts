@@ -5,20 +5,20 @@ import {catchError} from 'rxjs/operators';
 import {AppService} from '../../../services/app.service';
 import {Observable} from 'rxjs';
 import {environment} from '../../../../environments/environment';
+import {UserRegistrationModel} from '../../registration/models/UserRegistration.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
-  private loginUrl = 'http://localhost:8081/api/auth/login';
 
   constructor(private httpClient: HttpClient, private appService: AppService) {
   }
 
-  postRequestForLogin(user: UserLoginModel): any {
+  postRequestForLogin(user: UserLoginModel): Observable<UserLoginModel> {
     // test
     return this.httpClient
-      .post<any>(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, user)
+      .post<UserLoginModel>(`http://localhost:8080/login`, user)
       // .pipe(catchError(this.appService.handleError))
       ;
   }

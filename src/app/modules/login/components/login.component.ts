@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
   login(): void {
     console.log('Перевірка логіна');
     const user = {
-      email: this.loginForm.value.username,
+      username: this.loginForm.value.username,
       password: this.loginForm.value.password
     };
     // Test

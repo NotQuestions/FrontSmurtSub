@@ -35,6 +35,7 @@ export class RegistrationComponent implements OnInit {
   postDataForRegistration(): void {
     console.log(this.registrationForm);
     const user = {
+      username: this.registrationForm.value.username,
       email: this.registrationForm.value.email,
       password: this.registrationForm.value.password,
     };

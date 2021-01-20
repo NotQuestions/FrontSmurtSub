@@ -1,5 +1,5 @@
 export interface UserRegistrationModel {
-  // username: string;
+  username: string;
   email: string;
   password: string;
   // repeatPassword: string;
