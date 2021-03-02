@@ -14,7 +14,6 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
 
-//тут всі необхіні імпорти для використання ангулярівських методів таблиць і подібного
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +22,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    MainRoutingModule,
     RegistrationModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
