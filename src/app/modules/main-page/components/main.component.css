@@ -129,10 +129,10 @@ span {
 
 }
 
-.SearchElement {
+.SearchBlock {
   display: flex;
   justify-content: center;
-  width: 75%;
+  width: 100%;
 }
 
 .SearchElement {
