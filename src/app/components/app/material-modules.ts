@@ -44,6 +44,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 
 @NgModule({
+  imports: [MatTabsModule],
   exports: [
     A11yModule,
     ClipboardModule,
@@ -91,4 +92,5 @@ import {OverlayModule} from '@angular/cdk/overlay';
     ScrollingModule,
   ]
 })
-export class DemoMaterialModule {}
+export class DemoMaterialModule {
+}

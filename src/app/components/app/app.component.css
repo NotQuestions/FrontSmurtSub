@@ -63,11 +63,7 @@
 /*  justify-content: center;*/
 /*  align-items: center;*/
 /*}*/
-span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .Menu {
   display: flex;
@@ -107,15 +103,18 @@ span {
 
 }
 
+.SearchBlock {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .SearchElement {
-  width: 80%;
+  width: 75%;
   /*background-color: orange;*/
   font-size: 24px;
   margin-right: 10px;
   color: #70cdc3;
-
-
 }
 
 .Bell {
@@ -134,170 +133,13 @@ span {
   justify-content: center;
 }
 
-.Join {
+.Auth {
   display: flex;
   width: 200px;
   height: 50px;
-  align-items: center;
-  justify-content: center;
-}
-
-.AdsWidjets {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.MenuCategories {
-  background-color: #1f1c25;
-
-}
-
-.Categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #2e2d39;
-  /*margin-right: 40px;*/
-  /*margin-left: 40px;*/
-}
-
-.Elemen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 200px;
   font-size: 20px;
-}
-
-.men {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.BlockBots {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 75%;
-  min-height: 200px;
-  background-color: #201c25;
-}
-
-.BotsLabel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  font-weight: bolder;
   align-items: center;
-  margin-top: 10px;
-  width: 49%;
-  height: 110px;
-  background-color: #2e2d39;
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.wrap {
-  margin-left: 20px;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.filters {
-  margin-top: 10px;
-  width: 20%;
-  min-height: 200px;
-  height: 100%;
-  background-color: #2e2d39;
-  position: sticky;
-  /*z-index: 1;*/
-  top: 60%;
-  right: 10px;
-  /*overflow-x: hidden;*/
-
-}
-
-.filtersBlock {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  font-size: 20px;
-  color: #70cdc3;
-}
-
-.margin {
-
-  margin-left: 18px;
-  margin-right: 18px;
-}
-
-.checked {
-  color: #54c3b7;
-}
-
-.rating {
-  display: flex;
   justify-content: center;
-  flex-direction: row;
-}
-
-.BuyBttn {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
-
-}
-
-.BuyBttn:hover {
-  background-color: #70cdc3;
-}
-
-.mat-tab-group {
-  margin-bottom: 48px;
-  color: #70cdc3;
-}
-.mat-tabs-main{
   color: white;
-  background-color: #1f1c25;
-  min-height: 100%;
-}
-.First{
-  display: flex;
-  justify-content: space-around;
-}
-.FilBlock{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*flex-direction: row;*/
-  margin-top: 10px;
-  width: 20%;
-  min-height: 200px;
-  height: 100%;
-  background-color: #2e2d39;
-  position: sticky;
-
-}
-.FilBotBlock{
-  display: flex;
-  justify-content: space-around;
-  /*flex-direction: row;*/
-  flex-wrap: wrap;
 }

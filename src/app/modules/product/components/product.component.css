@@ -1,0 +1,18 @@
+.product {
+  background: #1f1c25;
+  margin: 2%;
+}
+
+.info {
+  display: flex;
+
+}
+
+.desc {
+  padding: 2%;
+}
+
+.comments h2 {
+  text-align: center;
+}
+

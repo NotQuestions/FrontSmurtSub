@@ -5,14 +5,14 @@ import { AppComponent } from './components/app/app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import {RegistrationModule} from './modules/registration/registration.module';
-import {MainRoutingModule} from './modules/main-page/main-routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatOptionModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {RouterModule} from '@angular/router';
+import {MatIconModule} from '@angular/material/icon';
+import {DemoMaterialModule} from './components/app/material-modules';
 
 
 
@@ -26,6 +26,7 @@ import {RouterModule} from '@angular/router';
     RegistrationModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    DemoMaterialModule,
     MatTabsModule,
     MatOptionModule,
     MatFormFieldModule,

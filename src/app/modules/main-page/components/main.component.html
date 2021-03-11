@@ -1,37 +1,7 @@
 <!--<div class="main">-->
 
 <!--</div>-->
-<!--Тут починається менюшка -->
-<div class="Menu">
-  <!--  сам класс меню в якому все знаходиться-->
-  <div class="MenuElement1">
-    <div class="Logo">
-      <!--      всі картинки зберігаються в асетах -->
-      <img src="assets/Images/LOGO1.png">
 
-    </div>
-    <div class="SearchBlock">
-      <input class="SearchElement" type="text" placeholder="Search...">
-    </div>
-    <!--  <label color="#ffffff" for="username">Username</label>-->
-  </div>
-  <div class="MenuElement2">
-    <div class="Bell">
-      <img src="assets/Images/Bell.png">
-    </div>
-    <div class="Cart">
-      <img src="assets/Images/Cart.png">
-    </div>
-    <div class="Join">
-      <a (click)="navigate('login')">Login</a>
-      <span> / </span>
-      <a (click)="navigate('registration')">Register</a>
-    </div>
-<!--    <div class="Join"><a>Join</a>-->
-<!--      <p> | </p><a>Login</a></div>-->
-  </div>
-</div>
-<!--кінець меню-->
 
 <div class="AdsWidjets">
   <div class="widget">
@@ -57,4 +27,377 @@
     <img src="assets/Images/Block.png">
   </div>
 
+</div>
+
+
+<!--Категорії підписок-->
+<div class="mat-flex">
+  <mat-tab-group mat-align-tabs="center" animationDuration="1000ms" class="mat-tabs-main"
+                 style="margin-bottom: 1%;margin-left: 1%; width: 81% ">
+
+    <mat-tab label="Всі" >
+      <div class="First">
+        <div class="FilBotBlock">
+          <!--          Test-->
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
+            <img src="assets/Images/IconBot.png" >
+            <div class="wrap">
+              <div class="flex">
+                <p>{{bot.key}}</p>
+                <div class="rating">
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>0}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>1}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>2}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>3}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>4}"> </span>
+
+                </div>
+              </div>
+              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
+            </div>
+            <p class="BuyBttn">BUY</p>
+          </div>
+
+
+          <!--          <div class="BotsLabel">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
+          <!--            <div class="wrap">-->
+          <!--              <div class="flex">-->
+          <!--                <p>Bot Name</p>-->
+          <!--                <div class="rating">-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
+          <!--            </div>-->
+          <!--            <p class="BuyBttn">BUY</p>-->
+          <!--          </div>-->
+
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Фільми">
+      <div class="First">
+        <div class="FilBotBlock">
+          <!--          Test-->
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+            <img src="assets/Images/IconBot.png">
+            <div class="wrap">
+              <div class="flex">
+                <p>{{bot.key}}</p>
+                <div class="rating">
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>0}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>1}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>2}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>3}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>4}"> </span>
+
+                </div>
+              </div>
+              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
+            </div>
+            <p class="BuyBttn">BUY</p>
+          </div>
+
+
+          <!--          <div class="BotsLabel">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
+          <!--            <div class="wrap">-->
+          <!--              <div class="flex">-->
+          <!--                <p>Bot Name</p>-->
+          <!--                <div class="rating">-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
+          <!--            </div>-->
+          <!--            <p class="BuyBttn">BUY</p>-->
+          <!--          </div>-->
+
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Музика">
+      <div class="First">
+        <div class="FilBotBlock">
+          <!--          Test-->
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+            <img src="assets/Images/IconBot.png">
+            <div class="wrap">
+              <div class="flex">
+                <p>{{bot.key}}</p>
+                <div class="rating">
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>0}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>1}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>2}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>3}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>4}"> </span>
+
+                </div>
+              </div>
+              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
+            </div>
+            <p class="BuyBttn">BUY</p>
+          </div>
+
+
+          <!--          <div class="BotsLabel">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
+          <!--            <div class="wrap">-->
+          <!--              <div class="flex">-->
+          <!--                <p>Bot Name</p>-->
+          <!--                <div class="rating">-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
+          <!--            </div>-->
+          <!--            <p class="BuyBttn">BUY</p>-->
+          <!--          </div>-->
+
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Розваги">
+      <div class="First">
+        <div class="FilBotBlock">
+          <!--          Test-->
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+            <img src="assets/Images/IconBot.png">
+            <div class="wrap">
+              <div class="flex">
+                <p>{{bot.key}}</p>
+                <div class="rating">
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>0}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>1}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>2}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>3}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>4}"> </span>
+
+                </div>
+              </div>
+              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
+            </div>
+            <p class="BuyBttn">BUY</p>
+          </div>
+
+
+          <!--          <div class="BotsLabel">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
+          <!--            <div class="wrap">-->
+          <!--              <div class="flex">-->
+          <!--                <p>Bot Name</p>-->
+          <!--                <div class="rating">-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
+          <!--            </div>-->
+          <!--            <p class="BuyBttn">BUY</p>-->
+          <!--          </div>-->
+
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Бізнес">
+      <div class="First">
+        <div class="FilBotBlock">
+          <!--          Test-->
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+            <img src="assets/Images/IconBot.png">
+            <div class="wrap">
+              <div class="flex">
+                <p>{{bot.key}}</p>
+                <div class="rating">
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>0}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>1}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>2}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>3}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>4}"> </span>
+
+                </div>
+              </div>
+              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
+            </div>
+            <p class="BuyBttn">BUY</p>
+          </div>
+
+
+          <!--          <div class="BotsLabel">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
+          <!--            <div class="wrap">-->
+          <!--              <div class="flex">-->
+          <!--                <p>Bot Name</p>-->
+          <!--                <div class="rating">-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
+          <!--            </div>-->
+          <!--            <p class="BuyBttn">BUY</p>-->
+          <!--          </div>-->
+
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Спорт та Фітнес">
+      <div class="First">
+        <div class="FilBotBlock">
+          <!--          Test-->
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+            <img src="assets/Images/IconBot.png">
+            <div class="wrap">
+              <div class="flex">
+                <p>{{bot.key}}</p>
+                <div class="rating">
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>0}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>1}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>2}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>3}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>4}"> </span>
+
+                </div>
+              </div>
+              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
+            </div>
+            <p class="BuyBttn">BUY</p>
+          </div>
+
+
+          <!--          <div class="BotsLabel">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
+          <!--            <div class="wrap">-->
+          <!--              <div class="flex">-->
+          <!--                <p>Bot Name</p>-->
+          <!--                <div class="rating">-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
+          <!--            </div>-->
+          <!--            <p class="BuyBttn">BUY</p>-->
+          <!--          </div>-->
+
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Інше">
+      <div class="First">
+        <div class="FilBotBlock">
+          <!--          Test-->
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+            <img src="assets/Images/IconBot.png">
+            <div class="wrap">
+              <div class="flex">
+                <p>{{bot.key}}</p>
+                <div class="rating">
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>0}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>1}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>2}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>3}"> </span>
+                  <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>4}"> </span>
+
+                </div>
+              </div>
+              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
+            </div>
+            <p class="BuyBttn">BUY</p>
+          </div>
+
+
+          <!--          <div class="BotsLabel">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
+          <!--            <div class="wrap">-->
+          <!--              <div class="flex">-->
+          <!--                <p>Bot Name</p>-->
+          <!--                <div class="rating">-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star checked"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                  <span class="fa fa-star"></span>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
+          <!--            </div>-->
+          <!--            <p class="BuyBttn">BUY</p>-->
+          <!--          </div>-->
+
+        </div>
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+  <div class="FilBlockMain">
+    <div style="position: fixed; width: 16%; overflow: visible">
+      <!--todo Filter-->
+      <div class="FilBlock">
+        <h3 style="color: white">Фільтир підписок</h3>
+        <!--          ================================================-->
+        <mat-form-field appearance="fill">
+          <mat-label>по жанрам</mat-label>
+          <mat-select>
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <!--          =======================================================-->
+        <!--          ================================================-->
+        <mat-form-field appearance="fill">
+          <mat-label>По ціні</mat-label>
+          <mat-select>
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <!--          =======================================================-->
+        <!--          ================================================-->
+        <mat-form-field appearance="fill">
+          <mat-label>По популярності</mat-label>
+          <mat-select>
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <!--          =======================================================-->
+      </div>
+
+      <!--    todo Sort-->
+      <div class="SortBlock">
+        <h3 style="color: white">Сотування підписок</h3>
+        <!--          ================================================-->
+        <mat-form-field appearance="fill">
+          <mat-label>Виберіть тип сортування</mat-label>
+          <mat-select>
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let sort of sorts" [value]="sort">{{sort}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
 </div>

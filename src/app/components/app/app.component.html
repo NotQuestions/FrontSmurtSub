@@ -1,10 +1,8 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--Тут імпорт з сайту для іконок їх куда його ше приставити.
-якзо є варік де його можна ше імпортнути крім html то напиши-->
 
 <!--також виникла проблема з уольором шрифтів не можу поняти як поміняти по нормальному ше гляну но це жесть трохи-->
 
 
+<!--todo Landing-->
 
 <!--<ul>-->
 <!--  <li>-->
@@ -30,213 +28,50 @@
 <!--</div>-->
 <!--</div>-->
 
+<!--Тут починається менюшка -->
+<div class="Menu">
+  <!--  сам класс меню в якому все знаходиться-->
+  <div class="MenuElement1">
+    <div class="Logo">
+      <!--      всі картинки зберігаються в асетах -->
+      <img src="assets/Images/LOGO1.png">
+
+    </div>
+    <div class="SearchBlock">
+      <input class="SearchElement" type="text" placeholder="Search...">
+    </div>
+    <!--  <label color="#ffffff" for="username">Username</label>-->
+  </div>
+  <div class="MenuElement2">
+    <div class="Bell">
+      <mat-icon matBadge="15" matBadgeColor="warn">
+        <img src="assets/Images/Bell.png">
+      </mat-icon>
+
+    </div>
+    <!-- #enddocregion mat-badge-color -->
+    <!-- Include text description of the icon's meaning for screen-readers -->
+    <span class="cdk-visually-hidden">
+      Example with a home icon with overlaid badge showing the number 15
+    </span>
+    <div class="Cart">
+      <mat-icon matBadge="2" matBadgeColor="warn">
+        <img src="assets/Images/Cart.png">
+      </mat-icon>
+    </div>
+    <div class="Auth">
+      <a (click)="navigate('login')">Login</a>
+      <span> / </span>
+      <a (click)="navigate('registration')">Register</a>
+    </div>
+    <!--    <div class="Join"><a>Join</a>-->
+    <!--      <p> | </p><a>Login</a></div>-->
+  </div>
+</div>
+<!--кінець меню-->
 <router-outlet></router-outlet>
 
 
 
-<!--тут початок з списками ботів (добавити категорії просто) копійнути класи з назвами First Second і тд
-Єдине трабл з кольором змінити колір шрифта -->
-<mat-tab-group mat-align-tabs="center" animationDuration="0ms" class="mat-tabs-main">
-  <!--  FIRST ============================================================================================================================================================-->
-  <mat-tab label="First">
-    <div class="First">
-      <div class="FilBotBlock">
-        <!--          Bot Label block-->
-        <div class="BotsLabel">
-          <img src="assets/Images/IconBot.png">
-          <div class="wrap">
-            <div class="flex">
-              <p>Bot Name</p>
-              <div class="rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-            </div>
-            <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
-          </div>
-          <p class="BuyBttn">BUY</p>
-        </div>
-        <!--    End Bot Label Block-->
-        <!--          Bot Label block-->
-        <div class="BotsLabel">
-          <img src="assets/Images/IconBot.png">
-          <div class="wrap">
-            <div class="flex">
-              <p>Bot Name</p>
-              <div class="rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-            </div>
-            <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
-          </div>
-          <p class="BuyBttn">BUY</p>
-        </div>
-        <!--    End Bot Label Block-->
-        <!--          Bot Label block-->
-        <div class="BotsLabel">
-          <img src="assets/Images/IconBot.png">
-          <div class="wrap">
-            <div class="flex">
-              <p>Bot Name</p>
-              <div class="rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-            </div>
-            <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
-          </div>
-          <p class="BuyBttn">BUY</p>
-        </div>
-        <!--    End Bot Label Block-->
-      </div>
-      <div class="FilBlock">
-          <div>
-            <!--          ================================================-->
-            <h4>select</h4>
-            <mat-form-field appearance="fill">
-              <mat-label>Filter</mat-label>
-              <mat-select>
-                <mat-option>None</mat-option>
-                <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
-              </mat-select>
-            </mat-form-field>
-            <!--          =======================================================-->
-            <!--          ================================================-->
-            <h4>select</h4>
-            <mat-form-field appearance="fill">
-              <mat-label>Filter</mat-label>
-              <mat-select>
-                <mat-option>None</mat-option>
-                <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
-              </mat-select>
-            </mat-form-field>
-            <!--          =======================================================-->
-            <!--          ================================================-->
-            <h4>select</h4>
-            <mat-form-field appearance="fill">
-              <mat-label>Filter</mat-label>
-              <mat-select>
-                <mat-option>None</mat-option>
-                <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
-              </mat-select>
-            </mat-form-field>
-            <!--          =======================================================-->
-          </div>
-      </div>
-    </div>
-  </mat-tab>
-  <!--  SECOND ========================================================================================================================================================-->
-  <mat-tab label="Second">
-    <div class="Second"><!--          Bot Label block-->
-      <div class="BotsLabel">
-        <img src="assets/Images/IconBot.png">
-        <div class="wrap">
-          <div class="flex">
-            <p>Bot Name</p>
-            <div class="rating">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
-        </div>
-        <p class="BuyBttn">BUY</p>
-      </div>
-      <!--    End Bot Label Block-->
-      <!--          Bot Label block-->
-      <div class="BotsLabel">
-        <img src="assets/Images/IconBot.png">
-        <div class="wrap">
-          <div class="flex">
-            <p>Bot Name</p>
-            <div class="rating">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
-        </div>
-        <p class="BuyBttn">BUY</p>
-      </div>
-      <!--    End Bot Label Block-->
-      <!--          Bot Label block-->
-      <div class="BotsLabel">
-        <img src="assets/Images/IconBot.png">
-        <div class="wrap">
-          <div class="flex">
-            <p>Bot Name</p>
-            <div class="rating">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
-        </div>
-        <p class="BuyBttn">BUY</p>
-      </div>
-      <!--    End Bot Label Block--></div>
-  </mat-tab>
-  <mat-tab label="Third" class="Third">
-    <div class="Third">
-      <!--          Bot Label block-->
-      <div class="BotsLabel">
-        <img src="assets/Images/IconBot.png">
-        <div class="wrap">
-          <div class="flex">
-            <p>Bot Name</p>
-            <div class="rating">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
-        </div>
-        <p class="BuyBttn">BUY</p>
-      </div>
-      <!--    End Bot Label Block-->
-      <!--          Bot Label block-->
-      <div class="BotsLabel">
-        <img src="assets/Images/IconBot.png">
-        <div class="wrap">
-          <div class="flex">
-            <p>Bot Name</p>
-            <div class="rating">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
-        </div>
-        <p class="BuyBttn">BUY</p>
-      </div>
-      <!--    End Bot Label Block-->
-    </div>
-  </mat-tab>
-</mat-tab-group>
 
 
