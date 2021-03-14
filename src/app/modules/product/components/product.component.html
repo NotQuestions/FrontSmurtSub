@@ -1,40 +1,129 @@
-<div [ngClass]="'product'">
-  <div class="info">
-    <div>
-      <img src="../../../../favicon.ico" alt="favi" width="500"
-           height="500">
-    </div>
+<!--<div [ngClass]="'product'">-->
+<!--  <div class="info">-->
+<!--    <div>-->
+<!--      <img src="../../../../favicon.ico" alt="favi" width="500"-->
+<!--           height="500">-->
+<!--    </div>-->
 
-    <div class="desc">
-      <h2>Bot name</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor
-        dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde
-        voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas
-        voluptatibus?
-        Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor
-        dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde
-        voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas
-        voluptatibus?
-        Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor
-        dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde
-        voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas
-        voluptatibus?
-        Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor
-        dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde
-        voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas
-        voluptatibus?
-        Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?
-      </p>
+<!--    <div class="desc">-->
+<!--      <h2>Bot name</h2>-->
+<!--      <p>-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor-->
+<!--        dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde-->
+<!--        voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas-->
+<!--        voluptatibus?-->
+<!--        Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor-->
+<!--        dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde-->
+<!--        voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas-->
+<!--        voluptatibus?-->
+<!--        Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor-->
+<!--        dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde-->
+<!--        voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas-->
+<!--        voluptatibus?-->
+<!--        Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor-->
+<!--        dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde-->
+<!--        voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas-->
+<!--        voluptatibus?-->
+<!--        Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?-->
+<!--      </p>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <div class="comments">-->
+<!--    <h2>Comments</h2>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="flex">
+  <div class="Post">
+    <div class="mainPost">
+      <!--    Коротка інфа про бота назва картинка кількість скачувань-->
+      <div [ngClass]="'shortPostInfo'">
+        <div class="imageNameInfo">
+          <img class="BotIcon" src="./assets/Images/BotIcon.png">
+          <div class="botName">Cool Bot Name</div>
+        </div>
+        <div class="rating">
+          <div class="DirtyWhite">buys count</div>
+          <div class="DirtyWhite">rating stars</div>
+          <div class="DirtyWhite">reviews count</div>
+        </div>
+      </div>
+      <!--    Закінчення короткої інфи про бота-->
+      <!--    -->
+      <!--    ====================================================================================================================-->
+      <!--    -->
+      <!--    Основна інфа про бота\ команди\ асети\ в основному тільки текст\-->
+      <div [ngClass]="'longPostInfo'">
+        <p class="DirtyWhite">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor
+          dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde
+          voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas
+          voluptatibus?<br><br>
+          comands: <br>
+          /help <br>
+          /find <br>
+          /check <br>
+          /attack<br><br>
+          Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor
+          dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde
+          voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas
+          voluptatibus?
+          <br><br>
+          Contributors:<br>
+          Avilen<br>
+          Shathu<br>
+          Sangis<br>
+          Susnort<br>
+          <br><br>
+          Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet cum dicta, distinctio, dolor
+          dolorum eligendi error eum ex in laborum, nam necessitatibus placeat quas repellendus sed sit soluta unde
+          voluptatem? Accusamus dolorem dolores eum modi molestiae necessitatibus, obcaecati repellat voluptas
+          voluptatibus?
+          <br><br>
+          Amet beatae debitis deserunt doloremque est explicabo praesentium reiciendis saepe unde voluptates?
+        </p>
+      </div>
+      <!--    Закінчення основної інфи про бота-->
+      <!--    -->
+      <!--    ====================================================================================================================-->
+      <!--    -->
+      <!--    Блок де можна глянути відгуки і залищити свій-->
+      <div [ngClass]="'userReviews'"></div>
+    </div>
+    <div class="buyCreatorsInfo">
+      <div class="buyVote">
+        <!--      <p>Buy</p>-->
+        <a href="" class="sliding-button">Buy</a>
+        <a href="" class="sliding-button">Reviews</a>
+        <!--      <p>Review</p>-->
+      </div>
+      <div><p class="FontLarge Blue">Tags</p>
+        <div class="tags">
+          <p class="Tag DirtyWhite">Mascarpone</p>
+          <p class="Tag DirtyWhite">Carrot</p>
+          <p class="Tag DirtyWhite">Onion</p>
+        </div>
+      </div>
+      <div><p class="FontLarge Blue">Creators</p>
+        <div class="Creators">
+          <div class="Creator DirtyWhite">SmartSub Team</div>
+          <div class="Creator DirtyWhite">Onion Team</div>
+        </div>
+      </div>
+      <div class="marginTop"><p class="FontLarge Blue">Support</p>
+        <div class="Support">
+          <div class="SupportTag"><a href="" class="DirtyWhite">Get Support</a></div>
+          <div class="SupportTag"><a href="" class="Red">Report</a></div>
+          <div class="SupportTag"><a href="" class="Red">Issue</a></div>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="comments">
-    <h2>Comments</h2>
-  </div>
 </div>
-
-
