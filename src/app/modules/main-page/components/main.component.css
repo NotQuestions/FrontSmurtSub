@@ -149,7 +149,7 @@ span {
   padding-left: 10px;
   width: 49%;
   height: 110px;
-  background-color: #2e2d39;
+  background: #2e2d39;
 }
 
 .flex {
@@ -272,7 +272,7 @@ mat-form-field.mat-form-field {
 
 
 ::ng-deep .custom-slider .ng5-slider .ng5-slider-bar {
-  background: #ffe4d1 ;
+  background: #ffe4d1;
   height: 2px;
 }
 /*Колір шкали*/
@@ -316,6 +316,10 @@ mat-form-field.mat-form-field {
 ::ng-deep .custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
   background: #000000;
 }
+.DirtyWhite {
+  color: #dcdcdc;
+  z-index: 100;
+}
 
 .custom-slider{
   display: flex;
@@ -335,3 +339,5 @@ mat-form-field.mat-form-field {
 .custom-slider input{
   width: 25%;
 }
+
+

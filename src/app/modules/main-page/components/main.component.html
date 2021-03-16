@@ -32,12 +32,13 @@
 
 <!--Категорії підписок-->
 <div class="mat-flex">
+
   <mat-tab-group mat-align-tabs="center" animationDuration="1000ms" class="mat-tabs-main"
                  style="margin-bottom: 1%;margin-left: 1%; width: 81% ">
-
     <mat-tab label="Всі">
       <div class="First">
         <div class="FilBotBlock">
+
           <!--          Test-->
           <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
             <img src="assets/Images/BotIcon54HW.png">
@@ -55,7 +56,9 @@
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="BuyBttn">BUY</p>
+            <div class="sliding-button" style="z-index: 1">
+            <a > <span style="z-index: 2; font-weight: 600">BYU</span></a>
+            </div>
           </div>
 
 
@@ -325,7 +328,7 @@
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="BuyBttn">BUY</p>
+            <p class="sliding-button">BUY</p>
           </div>
 
 
