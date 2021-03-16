@@ -266,3 +266,72 @@ span {
 mat-form-field.mat-form-field {
   font-size: 12px;
 }
+.
+
+
+
+
+::ng-deep .custom-slider .ng5-slider .ng5-slider-bar {
+  background: #ffe4d1 ;
+  height: 2px;
+}
+/*Колір шкали*/
+::ng-deep  .custom-slider .ng5-slider .ng5-slider-selection {
+  background: orange;
+}
+
+/*Повзунки*/
+::ng-deep  .custom-slider .ng5-slider .ng5-slider-pointer {
+  width: 8px;
+  height: 16px;
+  top: auto; /* to remove the default positioning */
+  bottom: 0;
+  background-color: #333333;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+::ng-deep .custom-slider .ng5-slider .ng5-slider-pointer:after {
+  display: none;
+}
+
+/*Всі цифри */
+::ng-deep .custom-slider .ng5-slider .ng5-slider-bubble {
+  bottom: 14px;
+}
+/*Перше та останнє число*/
+::ng-deep .custom-slider .ng5-slider .ng5-slider-limit {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+/*Поділка*/
+::ng-deep .custom-slider .ng5-slider .ng5-slider-tick {
+  width: 1px;
+  height: 10px;
+  margin-left: 4px;
+  border-radius: 0;
+  background: #ffe4d1;
+  top: -1px;
+}
+/*Колір поділок шкали*/
+::ng-deep .custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
+  background: #000000;
+}
+
+.custom-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.custom-slider .style{
+  width: 80%;
+}
+.custom-slider .price{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.custom-slider input{
+  width: 25%;
+}

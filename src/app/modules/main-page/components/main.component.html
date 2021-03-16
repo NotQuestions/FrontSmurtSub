@@ -35,12 +35,12 @@
   <mat-tab-group mat-align-tabs="center" animationDuration="1000ms" class="mat-tabs-main"
                  style="margin-bottom: 1%;margin-left: 1%; width: 81% ">
 
-    <mat-tab label="Всі" >
+    <mat-tab label="Всі">
       <div class="First">
         <div class="FilBotBlock">
           <!--          Test-->
           <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
-            <img src="assets/Images/BotIcon54HW.png" >
+            <img src="assets/Images/BotIcon54HW.png">
             <div class="wrap">
               <div class="flex">
                 <p>{{bot.key}}</p>
@@ -240,7 +240,7 @@
 
 
           <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/BotIcon54HW.png">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
           <!--            <div class="wrap">-->
           <!--              <div class="flex">-->
           <!--                <p>Bot Name</p>-->
@@ -265,7 +265,7 @@
         <div class="FilBotBlock">
           <!--          Test-->
           <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
-            <img src="assets/Images/BotIcon54HW.png">
+            <img src="assets/Images/IconBot.png">
             <div class="wrap">
               <div class="flex">
                 <p>{{bot.key}}</p>
@@ -285,7 +285,7 @@
 
 
           <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/BotIcon54HW.png">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
           <!--            <div class="wrap">-->
           <!--              <div class="flex">-->
           <!--                <p>Bot Name</p>-->
@@ -310,7 +310,7 @@
         <div class="FilBotBlock">
           <!--          Test-->
           <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
-            <img src="assets/Images/BotIcon54HW.png">
+            <img src="assets/Images/IconBot.png">
             <div class="wrap">
               <div class="flex">
                 <p>{{bot.key}}</p>
@@ -330,7 +330,7 @@
 
 
           <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/BotIcon54HW.png">-->
+          <!--            <img src="assets/Images/IconBot.png">-->
           <!--            <div class="wrap">-->
           <!--              <div class="flex">-->
           <!--                <p>Bot Name</p>-->
@@ -367,13 +367,16 @@
         </mat-form-field>
         <!--          =======================================================-->
         <!--          ================================================-->
-        <mat-form-field appearance="fill">
-          <mat-label>По ціні</mat-label>
-          <mat-select>
-            <mat-option>None</mat-option>
-            <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
-          </mat-select>
-        </mat-form-field>
+        <div class="custom-slider">
+          <div class="style">
+            <ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider>
+          </div>
+          <div class="price">
+            <input type="text" placeholder="min" value="{{value}}" [(ngModel)]="minValue" (input)="slidePrice()">
+            <input type="text" placeholder="max" value="{{highValue}}" [(ngModel)]="maxValue" (input)="slidePrice()">
+            <button> Enter</button>
+          </div>
+        </div>
         <!--          =======================================================-->
         <!--          ================================================-->
         <mat-form-field appearance="fill">

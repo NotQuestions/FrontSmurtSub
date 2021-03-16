@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {Options} from 'ng5-slider';
 
 @Component({
   selector: 'app-main',
@@ -21,13 +22,19 @@ export class MainComponent implements OnInit {
     ['BotName10', 4], ['BotName11', 5], ['BotName12', 5],
     ['BotName13', 3], ['BotName14', 2], ['BotName15', 1],
   ]);
-
+  minValue: number;
+  maxValue: number;
+  value = 10;
+  highValue = 40;
+  options: Options = {
+    floor: 0,
+    ceil: 50,
+    step: 1,
+    showTicks: false
+  };
 
   constructor(private router: Router) {
-
-
   }
-
   ngOnInit(): void {
   }
 
@@ -35,4 +42,9 @@ export class MainComponent implements OnInit {
   navigate(link: string): void {
     this.router.navigate(['/' + link]);
   }
+  slidePrice(): void{
+   this.value = this.minValue;
+   this.highValue = this.maxValue;
+  }
+
 }
