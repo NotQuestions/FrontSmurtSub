@@ -34,7 +34,9 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 .mat-tab-label{
-  min-width: 140px !important;
+  min-width: 150px !important;
+  /*max-width: 10% !important;*/
+  /*min-width: 10% !important;*/
   color: white !important;
 }
 

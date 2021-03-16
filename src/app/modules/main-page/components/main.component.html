@@ -1,8 +1,3 @@
-<!--<div class="main">-->
-
-<!--</div>-->
-
-
 <div class="AdsWidjets">
   <div class="widget">
     <img src="assets/Images/BotIcon144HW.png" class="image">
@@ -39,7 +34,6 @@
       <div class="First">
         <div class="FilBotBlock">
 
-          <!--          Test-->
           <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
             <img src="assets/Images/BotIcon54HW.png">
             <div class="wrap">
@@ -57,28 +51,9 @@
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
             <div class="sliding-button" style="z-index: 1">
-            <a > <span style="z-index: 2; font-weight: 600">BYU</span></a>
+              <a> <span style="z-index: 2; font-weight: 600">BYU</span></a>
             </div>
           </div>
-
-
-          <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/BotIcon54HW.png">-->
-          <!--            <div class="wrap">-->
-          <!--              <div class="flex">-->
-          <!--                <p>Bot Name</p>-->
-          <!--                <div class="rating">-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                </div>-->
-          <!--              </div>-->
-          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
-          <!--            </div>-->
-          <!--            <p class="BuyBttn">BUY</p>-->
-          <!--          </div>-->
 
         </div>
       </div>
@@ -86,8 +61,8 @@
     <mat-tab label="Фільми">
       <div class="First">
         <div class="FilBotBlock">
-          <!--          Test-->
-          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
             <img src="assets/Images/BotIcon54HW.png">
             <div class="wrap">
               <div class="flex">
@@ -103,27 +78,10 @@
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="BuyBttn">BUY</p>
+            <div class="sliding-button" style="z-index: 1">
+              <a> <span style="z-index: 2; font-weight: 600">BYU</span></a>
+            </div>
           </div>
-
-
-          <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/BotIcon54HW.png">-->
-          <!--            <div class="wrap">-->
-          <!--              <div class="flex">-->
-          <!--                <p>Bot Name</p>-->
-          <!--                <div class="rating">-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                </div>-->
-          <!--              </div>-->
-          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
-          <!--            </div>-->
-          <!--            <p class="BuyBttn">BUY</p>-->
-          <!--          </div>-->
 
         </div>
       </div>
@@ -131,8 +89,8 @@
     <mat-tab label="Музика">
       <div class="First">
         <div class="FilBotBlock">
-          <!--          Test-->
-          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
             <img src="assets/Images/BotIcon54HW.png">
             <div class="wrap">
               <div class="flex">
@@ -148,27 +106,10 @@
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="BuyBttn">BUY</p>
+            <div class="sliding-button" style="z-index: 1">
+              <a> <span style="z-index: 2; font-weight: 600">BYU</span></a>
+            </div>
           </div>
-
-
-          <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/BotIcon54HW.png">-->
-          <!--            <div class="wrap">-->
-          <!--              <div class="flex">-->
-          <!--                <p>Bot Name</p>-->
-          <!--                <div class="rating">-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                </div>-->
-          <!--              </div>-->
-          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
-          <!--            </div>-->
-          <!--            <p class="BuyBttn">BUY</p>-->
-          <!--          </div>-->
 
         </div>
       </div>
@@ -176,8 +117,8 @@
     <mat-tab label="Розваги">
       <div class="First">
         <div class="FilBotBlock">
-          <!--          Test-->
-          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
             <img src="assets/Images/BotIcon54HW.png">
             <div class="wrap">
               <div class="flex">
@@ -193,27 +134,10 @@
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="BuyBttn">BUY</p>
+            <div class="sliding-button" style="z-index: 1">
+              <a> <span style="z-index: 2; font-weight: 600">BYU</span></a>
+            </div>
           </div>
-
-
-          <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/BotIcon54HW.png">-->
-          <!--            <div class="wrap">-->
-          <!--              <div class="flex">-->
-          <!--                <p>Bot Name</p>-->
-          <!--                <div class="rating">-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                </div>-->
-          <!--              </div>-->
-          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
-          <!--            </div>-->
-          <!--            <p class="BuyBttn">BUY</p>-->
-          <!--          </div>-->
 
         </div>
       </div>
@@ -221,8 +145,8 @@
     <mat-tab label="Бізнес">
       <div class="First">
         <div class="FilBotBlock">
-          <!--          Test-->
-          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
+
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
             <img src="assets/Images/BotIcon54HW.png">
             <div class="wrap">
               <div class="flex">
@@ -238,27 +162,10 @@
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="BuyBttn">BUY</p>
+            <div class="sliding-button" style="z-index: 1">
+              <a> <span style="z-index: 2; font-weight: 600">BYU</span></a>
+            </div>
           </div>
-
-
-          <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/IconBot.png">-->
-          <!--            <div class="wrap">-->
-          <!--              <div class="flex">-->
-          <!--                <p>Bot Name</p>-->
-          <!--                <div class="rating">-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                </div>-->
-          <!--              </div>-->
-          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
-          <!--            </div>-->
-          <!--            <p class="BuyBttn">BUY</p>-->
-          <!--          </div>-->
 
         </div>
       </div>
@@ -266,9 +173,9 @@
     <mat-tab label="Спорт та Фітнес">
       <div class="First">
         <div class="FilBotBlock">
-          <!--          Test-->
-          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
-            <img src="assets/Images/IconBot.png">
+
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
+            <img src="assets/Images/BotIcon54HW.png">
             <div class="wrap">
               <div class="flex">
                 <p>{{bot.key}}</p>
@@ -283,27 +190,10 @@
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="BuyBttn">BUY</p>
+            <div class="sliding-button" style="z-index: 1">
+              <a> <span style="z-index: 2; font-weight: 600">BYU</span></a>
+            </div>
           </div>
-
-
-          <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/IconBot.png">-->
-          <!--            <div class="wrap">-->
-          <!--              <div class="flex">-->
-          <!--                <p>Bot Name</p>-->
-          <!--                <div class="rating">-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                </div>-->
-          <!--              </div>-->
-          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
-          <!--            </div>-->
-          <!--            <p class="BuyBttn">BUY</p>-->
-          <!--          </div>-->
 
         </div>
       </div>
@@ -311,9 +201,9 @@
     <mat-tab label="Інше">
       <div class="First">
         <div class="FilBotBlock">
-          <!--          Test-->
-          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue ">
-            <img src="assets/Images/IconBot.png">
+
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
+            <img src="assets/Images/BotIcon54HW.png">
             <div class="wrap">
               <div class="flex">
                 <p>{{bot.key}}</p>
@@ -328,39 +218,25 @@
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="sliding-button">BUY</p>
+            <div class="sliding-button" style="z-index: 1">
+              <a> <span style="z-index: 2; font-weight: 600">BYU</span></a>
+            </div>
           </div>
-
-
-          <!--          <div class="BotsLabel">-->
-          <!--            <img src="assets/Images/IconBot.png">-->
-          <!--            <div class="wrap">-->
-          <!--              <div class="flex">-->
-          <!--                <p>Bot Name</p>-->
-          <!--                <div class="rating">-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star checked"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                  <span class="fa fa-star"></span>-->
-          <!--                </div>-->
-          <!--              </div>-->
-          <!--              <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>-->
-          <!--            </div>-->
-          <!--            <p class="BuyBttn">BUY</p>-->
-          <!--          </div>-->
 
         </div>
       </div>
     </mat-tab>
 
+
   </mat-tab-group>
   <div class="FilBlockMain">
-    <div style="position: fixed; width: 16%; overflow: visible">
+    <div class="FilBlockPosition">
       <!--todo Filter-->
       <div class="FilBlock">
         <h3 style="color: white">Фільтир підписок</h3>
         <!--          ================================================-->
+
+        <div class="labelFil">Жанри</div>
         <mat-form-field appearance="fill">
           <mat-label>по жанрам</mat-label>
           <mat-select>
@@ -370,25 +246,30 @@
         </mat-form-field>
         <!--          =======================================================-->
         <!--          ================================================-->
+        <div class="labelFil">Ціна</div>
         <div class="custom-slider">
           <div class="style">
-            <ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider>
+            <ng5-slider [(value)]="priceValue" [(highValue)]="priceHighValue" [options]="options"></ng5-slider>
           </div>
           <div class="price">
-            <input type="text" placeholder="min" value="{{value}}" [(ngModel)]="minValue" (input)="slidePrice()">
-            <input type="text" placeholder="max" value="{{highValue}}" [(ngModel)]="maxValue" (input)="slidePrice()">
+            <input type="number" placeholder="min" value="{{priceValue}}" [(ngModel)]="minPrice" (input)="slidePrice()">
+            <input type="number" placeholder="max" value="{{priceHighValue}}" [(ngModel)]="maxPrice"
+                   (input)="slidePrice()">
             <button> Enter</button>
           </div>
         </div>
-        <!--          =======================================================-->
-        <!--          ================================================-->
-        <mat-form-field appearance="fill">
-          <mat-label>По популярності</mat-label>
-          <mat-select>
-            <mat-option>None</mat-option>
-            <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
-          </mat-select>
-        </mat-form-field>
+
+        <div class="labelFil">Рейтиг</div>
+        <div class="custom-slider">
+          <div class="style">
+            <ng5-slider [(value)]="ratingValue" [(highValue)]="ratingHighValue" [options]="optionsRating"></ng5-slider>
+          </div>
+                    <div class="price">
+                      <input type="number" placeholder="min" value="{{ratingValue}}" [(ngModel)]="minRating" (input)="slideRating()">
+                      <input type="number" placeholder="max" value="{{ratingHighValue}}" [(ngModel)]="maxRating" (input)="slideRating()">
+                      <button> Enter</button>
+                    </div>
+        </div>
         <!--          =======================================================-->
       </div>
 

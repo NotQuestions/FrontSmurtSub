@@ -22,15 +22,25 @@ export class MainComponent implements OnInit {
     ['BotName10', 4], ['BotName11', 5], ['BotName12', 5],
     ['BotName13', 3], ['BotName14', 2], ['BotName15', 1],
   ]);
-  minValue: number;
-  maxValue: number;
-  value = 10;
-  highValue = 40;
+  minPrice = 10;
+  maxPrice = 40;
+  priceValue = 10;
+  priceHighValue = 40;
   options: Options = {
     floor: 0,
     ceil: 50,
     step: 1,
     showTicks: false
+  };
+  minRating = 1;
+  maxRating = 4;
+  ratingValue = 1;
+  ratingHighValue = 4;
+  optionsRating: Options = {
+    floor: 0,
+    ceil: 5,
+    step: 1,
+    showTicks: true
   };
 
   constructor(private router: Router) {
@@ -43,8 +53,13 @@ export class MainComponent implements OnInit {
     this.router.navigate(['/' + link]);
   }
   slidePrice(): void{
-   this.value = this.minValue;
-   this.highValue = this.maxValue;
+   this.priceValue = this.minPrice;
+   this.priceHighValue = this.maxPrice;
+  }
+
+  slideRating(): void{
+    this.ratingValue = this.minRating;
+    this.ratingHighValue = this.maxRating;
   }
 
 }
