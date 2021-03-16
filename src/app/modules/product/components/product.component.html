@@ -93,7 +93,107 @@
       <!--    ====================================================================================================================-->
       <!--    -->
       <!--    Блок де можна глянути відгуки і залищити свій-->
-      <div [ngClass]="'userReviews'"></div>
+      <div [ngClass]="'userReviews'">
+        <div class="UserReviews">
+          <p class="Blue FontLarge">User Reviews</p>
+          <div class="Total">
+            <div class="FontLarge marginLeft">4/5</div>
+            <div class="marginLeft">
+              <span class="fa fa-star Blue"></span>
+              <span class="fa fa-star Blue"></span>
+              <span class="fa fa-star Blue"></span>
+              <span class="fa fa-star Blue"></span>
+              <span class="fa fa-star "></span>
+            </div>
+            <div class="FontLarge marginLeft DirtyWhite">Based on "count" User reviews</div>
+          </div>
+
+
+<!--          <mat-form-field appearance="fill">-->
+<!--            <mat-label>Select</mat-label>-->
+<!--            <mat-select>-->
+<!--              <mat-option value="one">First option</mat-option>-->
+<!--              <mat-option value="two">Second option</mat-option>-->
+<!--            </mat-select>-->
+<!--          </mat-form-field>-->
+<!--          <mat-form-field appearance="fill">-->
+<!--            <mat-label>Textarea</mat-label>-->
+<!--            <textarea matInput></textarea>-->
+<!--          </mat-form-field>-->
+<!--          <div></div>-->
+          <form class="ReviewForm">
+            <h4 class="FontMedium Blue">Leave your Comment below</h4>
+            <div class="formArea">
+            <mat-form-field appearance="fill" class="StarsSelector DirtyWhite">
+              <mat-label class="DirtyWhite">Choose Rating Stars</mat-label>
+              <mat-select  class="DirtyWhite">
+                <mat-option *ngFor="let star of stars" [value]="star.value" >
+                  {{star.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <textarea class="TextArea FontLarger"></textarea></div>
+          </form>
+<!--          -->
+<!--          -->
+<!--          -->
+<!--         =============================================================================================================== -->
+<!--          -->
+<!--         Початок. Блочок з коментом під постом-->
+          <div class="UserBlockInfo">
+            <div class="nameImgInfo">
+              <img src="assets/Images/BotIcon1.png" class="UserIcon">
+              <div class="FlexName">
+                <div class="FontLarge Blue">Cool User Name</div>
+                <div class="">
+                  <span class="fa fa-star Blue"></span>
+                  <span class="fa fa-star Blue"></span>
+                  <span class="fa fa-star Blue"></span>
+                  <span class="fa fa-star Blue"></span>
+                  <span class="fa fa-star DirtyWhite"></span>
+                </div>
+              </div>
+            </div>
+            <div class="Commend FontMedium DirtyWhite">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto ipsum iste magnam
+                maiores porro repellat sunt, ullam! A dolorum explicabo impedit nemo repellendus saepe sit voluptates?
+                Aut commodi, eius!</p>
+            </div>
+
+          </div>
+<!--          Кінець. Блочок з коментом юзера під постом-->
+<!--          -->
+          <!--         Початок. Блочок з коментом під постом-->
+          <div class="UserBlockInfo">
+            <div class="nameImgInfo">
+              <img src="assets/Images/BotIcon1.png" class="UserIcon">
+              <div class="FlexName">
+                <div class="FontLarge">Cool User Name</div>
+                <div class="">
+                  <span class="fa fa-star Blue"></span>
+                  <span class="fa fa-star Blue"></span>
+                  <span class="fa fa-star Blue"></span>
+                  <span class="fa fa-star Blue"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="Commend FontMedium">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto ipsum iste magnam
+                maiores porro repellat sunt, ullam! A dolorum explicabo impedit nemo repellendus saepe sit voluptates?
+                Aut commodi, eius!</p>
+            </div>
+
+          </div>
+          <!--          Кінець. Блочок з коментом юзера під постом-->
+          <!--          -->
+          <!--          -->
+<!--          ====================================================================================================================-->
+<!--          -->
+<!--          -->
+          <div></div>
+        </div>
+      </div>
     </div>
     <div class="buyCreatorsInfo">
       <div class="buyVote">
