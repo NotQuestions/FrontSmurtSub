@@ -26,7 +26,8 @@ import {Ng5SliderModule} from 'ng5-slider';
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    Ng5SliderModule
+    Ng5SliderModule,
+    MatNativeDateModule,
   ]
 })
 export class MainModule {

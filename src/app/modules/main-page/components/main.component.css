@@ -88,7 +88,7 @@ h1 {
 /*  justify-content: center;*/
 /*  align-items: center;*/
 /*}*/
-span {
+ span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,7 +324,7 @@ mat-form-field.mat-form-field {
 }
 /*Колір поділок шкали*/
 ::ng-deep .custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
-  background: #000000;
+  background: #f6f6f6;
 }
 .DirtyWhite {
   color: #dcdcdc;
@@ -358,4 +358,25 @@ mat-form-field.mat-form-field {
   font-size: 14px;
 }
 
+.example-section {
+  text-align: left;
+  margin: 12px 0;
+  color: #cecece;
+
+}
+
+.example-margin {
+  margin: 0 12px;
+}
+.example-list-section{
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 

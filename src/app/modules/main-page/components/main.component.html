@@ -237,38 +237,63 @@
         <!--          ================================================-->
 
         <div class="labelFil">Жанри</div>
-        <mat-form-field appearance="fill">
-          <mat-label>по жанрам</mat-label>
-          <mat-select>
-            <mat-option>None</mat-option>
-            <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <!--          =======================================================-->
-        <!--          ================================================-->
+
+          <section class="example-section">
+  <span class="example-list-section">
+    <mat-checkbox class="example-margin"
+                  [checked]="allComplete"
+                  [color]="task.color"
+                  [indeterminate]="someComplete()"
+                  (change)="setAll($event.checked)">
+      {{task.name}}
+    </mat-checkbox>
+  </span>
+
+    <span class="example-list-section">
+    <ul>
+      <li *ngFor="let subtask of task.subtasks">
+        <mat-checkbox [(ngModel)]="subtask.completed"
+                      [color]="subtask.color"
+                      (ngModelChange)="updateAllComplete()">
+          {{subtask.name}}
+        </mat-checkbox>
+      </li>
+    </ul>
+  </span>
+          </section>
+
+        <!--        <mat-form-field appearance="fill">-->
+        <!--          <mat-label>по жанрам</mat-label>-->
+        <!--          <mat-select>-->
+        <!--            <mat-option>None</mat-option>-->
+        <!--            <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>-->
+        <!--          </mat-select>-->
+        <!--        </mat-form-field>-->
+
+
+        <!--        Шкала ціни-->
         <div class="labelFil">Ціна</div>
         <div class="custom-slider">
           <div class="style">
             <ng5-slider [(value)]="priceValue" [(highValue)]="priceHighValue" [options]="options"></ng5-slider>
           </div>
           <div class="price">
-            <input type="number" placeholder="min" value="{{priceValue}}" [(ngModel)]="minPrice" (input)="slidePrice()">
-            <input type="number" placeholder="max" value="{{priceHighValue}}" [(ngModel)]="maxPrice"
-                   (input)="slidePrice()">
+            <input type="number" placeholder="min" value="{{priceValue}}" [(ngModel)]="priceValue">
+            <input type="number" placeholder="max" value="{{priceHighValue}}" [(ngModel)]="priceHighValue">
             <button> Enter</button>
           </div>
         </div>
 
-        <div class="labelFil">Рейтиг</div>
+        <div class="labelFil">Рейтинг</div>
         <div class="custom-slider">
           <div class="style">
             <ng5-slider [(value)]="ratingValue" [(highValue)]="ratingHighValue" [options]="optionsRating"></ng5-slider>
           </div>
-                    <div class="price">
-                      <input type="number" placeholder="min" value="{{ratingValue}}" [(ngModel)]="minRating" (input)="slideRating()">
-                      <input type="number" placeholder="max" value="{{ratingHighValue}}" [(ngModel)]="maxRating" (input)="slideRating()">
-                      <button> Enter</button>
-                    </div>
+          <div class="price">
+            <input type="number" placeholder="min" value="{{ratingValue}}" [(ngModel)]="ratingValue">
+            <input type="number" placeholder="max" value="{{ratingHighValue}}" [(ngModel)]="ratingHighValue">
+            <button> Enter</button>
+          </div>
         </div>
         <!--          =======================================================-->
       </div>
