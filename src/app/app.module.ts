@@ -13,11 +13,12 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {DemoMaterialModule} from './components/app/material-modules';
+import { FilterComponent } from './components/filter/filter.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, FilterComponent],
   imports: [
     BrowserModule,
     BrowserModule,
