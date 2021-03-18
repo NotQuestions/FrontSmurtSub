@@ -28,7 +28,7 @@ export class MainComponent implements OnInit {
       {name: 'Інше', completed: false, color: 'warn'},
     ]
   };
-  allComplete = true;
+  allComplete = false;
   filters: string[] = [
     'filter1', 'filter2', 'filter3'
   ];
