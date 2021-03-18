@@ -8,10 +8,19 @@
   margin-top: 1%;
 
 }
-
+.a{
+}
+.active{
+  color: black;
+}
+/*.a{*/
+/*  color:royalblue;*/
+/*  text-decoration: none;*/
+/*}*/
 .management {
   width: 25%;
   background-color: #1f1c25;
+  padding: 2% 0px 2% 2%;
 
 }
 
