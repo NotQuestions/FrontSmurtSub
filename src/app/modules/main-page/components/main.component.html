@@ -39,11 +39,11 @@
       <div class="First">
         <div class="FilBotBlock">
           <!--          Test-->
-          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " (click)="navigate('product/'+bot.key)">
-            <img src="assets/Images/BotIcon54HW.png" >
+          <div class="BotsLabel" *ngFor="let bot of bots | keyvalue " >
+            <img src="assets/Images/BotIcon54HW.png" (click)="navigate('product/'+bot.key)">
             <div class="wrap">
               <div class="flex">
-                <p>{{bot.key}}</p>
+                <p (click)="navigate('product/'+bot.key)">{{bot.key}}</p>
                 <div class="rating">
                   <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>0}"> </span>
                   <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>1}"> </span>
@@ -52,10 +52,12 @@
                   <span class="fa fa-star" [ngClass]="{'fa fa-star ':true, 'checked' : bot.value>4}"> </span>
 
                 </div>
+<!--                <div class="Price" (click)="navigate('product/'+bot.key)"  >Price: {{bot.value}}$</div>-->
               </div>
               <p>Тут опис в пару слів про функціонал ось не буду багато писати</p>
             </div>
-            <p class="BuyBttn">BUY</p>
+            <a href="" class="sliding-button Price ">{{bot.value}}$ Buy</a>
+<!--            <p class="BuyBttn">BUY</p>-->
           </div>
 
 

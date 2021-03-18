@@ -22,7 +22,6 @@ export class MainComponent implements OnInit {
     ['BotName13', 3], ['BotName14', 2], ['BotName15', 1],
   ]);
 
-
   constructor(private router: Router) {
 
 
