@@ -52,6 +52,7 @@ export class MainComponent implements OnInit {
     showTicks: false
   };
 
+
   ratingValue = 0;
   ratingHighValue = 5;
   optionsRating: Options = {
@@ -60,6 +61,7 @@ export class MainComponent implements OnInit {
     step: 1,
     showTicks: true
   };
+
 
   constructor(private router: Router) {
   }

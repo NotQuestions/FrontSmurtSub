@@ -12,6 +12,7 @@ import {MatOptionModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {DemoMaterialModule} from './components/app/material-modules';
+import { ProfileComponent } from './modules/profile/components/profile.component';
 
 
 
