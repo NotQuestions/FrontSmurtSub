@@ -88,7 +88,7 @@ h1 {
 /*  justify-content: center;*/
 /*  align-items: center;*/
 /*}*/
-span {
+ span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,8 +149,8 @@ span {
   padding-left: 10px;
   width: 49%;
   height: 110px;
-  /*border: 2px Solid dimgrey;*/
-  background-color: #2e2d39;
+  background: #2e2d39;
+
 }
 
 .flex {
@@ -242,9 +242,13 @@ span {
 .FilBlock{
   text-align: center;
   /*flex-direction: row;*/
-  padding-top: 10px;
+  padding: 2% 0 5% 0;
   margin-bottom: 5%;
   background-color: #2e2d39;
+}
+.labelFil{
+  text-align: left;
+  padding: 2% 0 3% 10%;
 }
 
 .SortBlock{
@@ -252,11 +256,19 @@ span {
   /*flex-direction: row;*/
   padding-top: 10px;
   background-color: #2e2d39;
+  margin-bottom: 3%;
+  color: #cecece;
 }
 .FilBlockMain{
   display: block;
   margin-bottom: 2%;
   margin-left: 1%;
+}
+.FilBlockPosition{
+  position: sticky;
+  width: 90%;
+  top: 0;
+  overflow: visible
 }
 .FilBotBlock{
   width: 100%;
@@ -271,6 +283,7 @@ span {
 mat-form-field.mat-form-field {
   font-size: 12px;
 }
+
 
 
 .sliding-button {
@@ -313,4 +326,129 @@ mat-form-field.mat-form-field {
   bottom: 0%;
   top: auto;
   height: 100%;
+=======
+.labelFil{
+  text-align: left;
+  margin-left: 10%;
+  color: white
+}
+
+
+
+::ng-deep .custom-slider .ng5-slider .ng5-slider-bar {
+  background: #ffe4d1;
+  height: 2px;
+}
+/*Колір шкали*/
+::ng-deep  .custom-slider .ng5-slider .ng5-slider-selection {
+  background: orange;
+}
+
+/*Повзунки*/
+::ng-deep  .custom-slider .ng5-slider .ng5-slider-pointer {
+  width: 8px;
+  height: 16px;
+  top: auto; /* to remove the default positioning */
+  bottom: 0;
+  background-color: #333333;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+::ng-deep .custom-slider .ng5-slider .ng5-slider-pointer:after {
+  display: none;
+}
+
+/*Всі цифри */
+::ng-deep .custom-slider .ng5-slider .ng5-slider-bubble {
+  bottom: 14px;
+}
+/*Перше та останнє число*/
+::ng-deep .custom-slider .ng5-slider .ng5-slider-limit {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+/*Поділка*/
+::ng-deep .custom-slider .ng5-slider .ng5-slider-tick {
+  width: 1px;
+  height: 10px;
+  margin-left: 4px;
+  border-radius: 0;
+  background: #ffe4d1;
+  top: -1px;
+}
+/*Колір поділок шкали*/
+::ng-deep .custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
+  background: #f6f6f6;
+}
+.DirtyWhite {
+  color: #dcdcdc;
+  z-index: 100;
+}
+
+.custom-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.custom-slider .style{
+  width: 80%;
+}
+.custom-slider .price{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+.custom-slider input{
+
+  border-radius: 10%;
+  height: 25px;
+  width: 15%;
+}
+
+.custom-slider h6{
+  margin-top: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.example-section {
+  text-align: left;
+  margin: 12px 0 12px 12px;
+  color: #cecece;
+
+
+}
+
+.example-margin {
+  margin: 0 12px;
+}
+.example-list-section{
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  margin-bottom: 0;
+}
+
+.mat-raised-button{
+  background: #1f1c25;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+  padding: 0;
+}
+
+h3{
+  color: white;
+  margin: 0;
+  padding: 2% 0 3% 0
 }

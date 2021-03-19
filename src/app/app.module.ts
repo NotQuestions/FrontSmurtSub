@@ -5,20 +5,19 @@ import { AppComponent } from './components/app/app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import {RegistrationModule} from './modules/registration/registration.module';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatOptionModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
 import {DemoMaterialModule} from './components/app/material-modules';
 import { ProfileComponent } from './modules/profile/components/profile.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent ],
   imports: [
     BrowserModule,
     BrowserModule,
@@ -34,6 +33,8 @@ import { ProfileComponent } from './modules/profile/components/profile.component
     MatSelectModule,
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
