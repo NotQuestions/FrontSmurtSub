@@ -27,7 +27,7 @@
     </mat-checkbox>
   </span>
 
-    <span class="example-list-section">
+    <div class="example-list-section">
     <ul>
       <li *ngFor="let subtask of task.subtasks">
         <mat-checkbox [(ngModel)]="subtask.completed"
@@ -37,7 +37,7 @@
         </mat-checkbox>
       </li>
     </ul>
-  </span>
+  </div>
   </section>
   <!--        Шкала ціни-->
   <div class="labelFil">Ціна</div>
@@ -46,8 +46,10 @@
       <ng5-slider [(value)]="priceValue" [(highValue)]="priceHighValue" [options]="options"></ng5-slider>
     </div>
     <div class="price">
-      <input type="number" placeholder="min" value="{{priceValue}}" [(ngModel)]="priceValue">
-      <input type="number" placeholder="max" value="{{priceHighValue}}" [(ngModel)]="priceHighValue">
+      <label for="minPrice"></label>
+      <input id="minPrice" name="minPrice" type="number" placeholder="min" value="{{priceValue}}" [(ngModel)]="priceValue">
+      <label for="maxPrice"></label>
+      <input id="maxPrice" name="maxPrice"  label="" type="number" placeholder="max" value="{{priceHighValue}}" [(ngModel)]="priceHighValue">
       <button mat-raised-button class="mat-raised-button">OK</button>
     </div>
   </div>
@@ -58,8 +60,10 @@
       <ng5-slider [(value)]="ratingValue" [(highValue)]="ratingHighValue" [options]="optionsRating"></ng5-slider>
     </div>
     <div class="price">
-      <input type="number" placeholder="min" value="{{ratingValue}}" [(ngModel)]="ratingValue">
-      <input type="number" placeholder="max" value="{{ratingHighValue}}" [(ngModel)]="ratingHighValue">
+      <label for="minRating"></label>
+      <input id="minRating" name="minRating" type="number" placeholder="min" value="{{ratingValue}}" [(ngModel)]="ratingValue">
+      <label for="maxRating"></label>
+      <input  id="maxRating" name="maxRating" type="number" placeholder="max" value="{{ratingHighValue}}" [(ngModel)]="ratingHighValue">
       <button mat-raised-button style="background: #1f1c25; color: white">OK</button>
     </div>
   </div>
