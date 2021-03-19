@@ -19,7 +19,7 @@ import {FormsModule} from '@angular/forms';
     MatTabsModule,
     MatOptionModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class ProductModule { }

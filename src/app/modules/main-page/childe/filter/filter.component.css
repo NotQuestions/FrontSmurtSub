@@ -1,6 +1,6 @@
 
 .main{
-display: flex;
+  display: flex;
   justify-content: flex-end;
   /*background: #cd7070;*/
 }
@@ -85,7 +85,7 @@ h1 {
 /*  justify-content: center;*/
 /*  align-items: center;*/
 /*}*/
- span {
+span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,9 +263,8 @@ h1 {
 }
 .FilBlockPosition{
   position: sticky;
-  width: 90%;
   top: 0;
-  overflow: visible
+  color: white;
 }
 .FilBotBlock{
   width: 100%;
@@ -276,7 +275,6 @@ h1 {
 }
 .mat-flex{
   display: flex;
-  margin: 0 1%;
 }
 mat-form-field.mat-form-field {
   font-size: 12px;
@@ -334,7 +332,7 @@ mat-form-field.mat-form-field {
 }
 /*Колір поділок шкали*/
 ::ng-deep .custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
-  background: #f6f6f6;
+  background: #000000;
 }
 .DirtyWhite {
   color: #dcdcdc;
@@ -355,20 +353,11 @@ mat-form-field.mat-form-field {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5%;
 }
 .custom-slider input{
-
   border-radius: 10%;
   height: 25px;
   width: 15%;
-}
-
-.custom-slider h6{
-  margin-top: 5px;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
 }
 
 .example-section {
