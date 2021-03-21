@@ -10,7 +10,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {DemoMaterialModule} from '../../components/app/material-modules';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {Ng5SliderModule} from 'ng5-slider';
-import {FilterComponent} from './childe/filter/filter.component';
+import {FilterComponent} from './childe/components/filter/filter.component';
 import {RouterModule} from '@angular/router';
 
 
