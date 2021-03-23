@@ -8,10 +8,9 @@
   margin-top: 1%;
 
 }
-.a{
-}
+
 .active{
-  color: black;
+  color:#70cdc3;
 }
 /*.a{*/
 /*  color:royalblue;*/
@@ -30,11 +29,13 @@
   /*align-items: center;*/
   flex-direction: column;
   padding-left: 3%;
-
+  padding-right: 2%;
 }
-.contex a{
-  color: white;
-}
+/*.context:hover{*/
+/*  color: red;*/
+/*  padding-right: 2%;*/
+/*  text-decoration: none;*/
+/*}*/
 
 
 .account-info {
@@ -71,4 +72,8 @@
 .account-info-value {
   margin-left: 10%;
   width: 40%;
+}
+
+.marginTop{
+  margin-top: 10px;
 }
