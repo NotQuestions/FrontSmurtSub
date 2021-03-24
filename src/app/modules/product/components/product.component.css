@@ -167,7 +167,7 @@
 }
 .formArea{
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   justify-content: space-around;
   padding-left: 5%;
   padding-right: 5%;
@@ -224,12 +224,13 @@
   /*border: 1px Solid #70cdc3;*/
 }
 
-.Red {
-  color: #d0000a;
-}
+
 
 .marginTop {
   margin-top: 15%;
 }
 
+.width{
+  width: 20%;
+}
 
