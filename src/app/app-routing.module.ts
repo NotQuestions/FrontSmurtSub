@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: 'reset-password', loadChildren: () => import('./modules/reset-password/reset-password.module').then(f => f.ResetPasswordModule)},
   {path: 'product/:botName', loadChildren: () => import('./modules/product/product.module').then(f => f.ProductModule)},
   {path: 'profile', loadChildren: () => import('./modules/profile/profile.module').then(f => f.ProfileModule)},
+  {path: 'admin', loadChildren: () => import('./modules/admin/admin.module').then(f => f.AdminModule)}
 ];
 
 @NgModule({
