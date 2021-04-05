@@ -81,7 +81,7 @@
 }
 
 .marginLeft {
-
+margin: 1% 0px 1% 3%;
 }
 
 .example-form {
@@ -107,6 +107,9 @@ textarea {
   /*color: #54c3b7;*/
   /*border: 1px Solid #54c3b7;*/
   font-size: 20px;
+  text-decoration: none;
+  background-color: #201c25;
+  color: #70cdc3;
 }
 
 .mat-form-field + .mat-form-field {
@@ -132,6 +135,54 @@ textarea {
 
 .borderB {
   border-bottom: 2px Solid #70cdc3;
-  margin: 1% 0px 0px 0px ;
+  margin: 1% 0px 0px 0px;
+}
+input{
+  text-decoration: none;
+  font-size: medium;
+}
+.Price1{
+  text-decoration: none;
 }
 
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.Binput{
+  width: 40px;
+}
+.AddBttn{
+  background-color: #2db7b8;
+  color: black;
+  height: 45px;
+  font-size: 17px;
+  width: 100px;
+
+}
+.AddBttn:hover{
+  background-color: #cd7070;
+}
+
+.EditForm{
+  padding: 0px 0px 0px 10%;
+  margin: 3% 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Tagss{
+  display: flex;
+
+}
+.AddBttnS{
+  background-color: #2db7b8;
+  color: black;
+  height: 45px;
+  font-size: 17px;
+  width: 100px;
+
+}
+.AddBttnS:hover{
+  background-color: darkseagreen;
+}
